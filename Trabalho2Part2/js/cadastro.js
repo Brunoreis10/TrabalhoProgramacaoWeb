@@ -2,16 +2,16 @@
     document.getElementById("button-cadastrar").onclick = () => {
         let form = $("#formCadastro").serializeArray();
         let error = true;
-        
+
         for (let input in form) {
-            let element = $("#"+form[input]['name']);
+            let element = $("#" + form[input]['name']);
             let valid = form[input]["value"];
             let error_element = $("p", element.parent());
             if (valid.trim() != '') {
                 error_element.removeClass("erro").addClass("semErro");
                 error = false;
             }
-		    else {
+            else {
                 error_element.removeClass("semErro").addClass("erro");
                 error = true;
                 return;
@@ -28,6 +28,7 @@
         }
 
         if (!error) {
+            checkItemExiste(false, true, false);
             location.href = 'formLogin.html';
         }
     };

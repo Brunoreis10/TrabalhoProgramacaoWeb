@@ -21,22 +21,22 @@
             <ul>
                 <li>
                     <label for="name">Nome de usuário:</label>
-                    <input type="text" id="name" name="name" placeholder="Nome de usuário">
+                    <input type="text" id="name" name="name" placeholder="Nome de usuário" minlength="5" maxlength="10">
                     <p class="semErro">O campo é obrigatório</p>
                 </li>
                 <li>
                     <label for="email">Endereço de Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Endereço de email">
+                    <input type="email" id="email" name="email" placeholder="Endereço de email" minlength="13" maxlength="25">
                     <p class="semErro">O campo é obrigatório</p>
                 </li>
                 <li>
                     <label for="senha">Crie uma senha:</label>
-                    <input type="password" id="senha" name="senha" placeholder="Senha">
+                    <input type="password" id="senha" name="senha" placeholder="Senha" minlength="6" maxlength="12">
                     <p class="semErro">O campo é obrigatório</p>
                 </li>
                 <li>
                     <label for="senha-in">Confirme sua senha:</label>
-                    <input type="password" id="senha-in" name="senha-in" placeholder="Confirmação de senha">
+                    <input type="password" id="senha-in" name="senha-in" placeholder="Confirmação de senha" minlength="6" maxlength="12">
                     <p class="semErro">O campo é obrigatório</p>
                 </li>
                 <li>
@@ -63,6 +63,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="./js/cadastro.js"></script>
+    <script src="./js/inicio.js"></script>
+    <script src="./js/getAndSetInformacoes.js"></script>
+    <script src="./js/modalDinamico.js"></script>
 
 </body>
 

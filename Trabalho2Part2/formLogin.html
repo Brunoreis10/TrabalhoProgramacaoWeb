@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <title>Login - P.O.G</title>
 </head>
 
-<body>
+<body onload="getInformacoesUsuario()">
     <img src="./images/logo.png">
 
     <h1>Efetuar login</h1>
@@ -20,12 +20,12 @@
             <ul>
                 <li>
                     <label for="email">Endereço de e-mail ou nome de usuário </label><br>
-                    <input type="email" id="email" name="email" placeholder="Endereço de e-mail">
+                    <input type="email" id="email" name="email" placeholder="Endereço de e-mail" minlength="13" maxlength="25">
                     <p class="semErro">O campo é obrigatório</p>
                 </li>
                 <li>
                     <label for="senha">Senha</label><br>
-                    <input type="password" id="senha" name="senha" placeholder="Senha">
+                    <input type="password" id="senha" name="senha" placeholder="Senha" minlength="6" maxlength="12">
                     <p class="semErro">O campo é obrigatório</p>
                 </li>
             </ul>
@@ -42,14 +42,16 @@
     </section>
 
     <p>
-        Crie uma conta no POG, descubra milhares de jogos <br>
-        e faça parte da maior comunidade online.
+        Crie uma conta no POG, descubra milhares de jogos <br> e faça parte da maior comunidade online.
     </p>
 
     <button id="button-cadastro">Cadastre-se</button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="./js/login.js"></script>
+    <script src="./js/inicio.js"></script>
+    <script src="./js/getAndSetInformacoes.js"></script>
+    <script src="./js/modalDinamico.js"></script>
 
 </body>
 
