@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p, a, li, label {
+    font-size: 14px;
+    font-weight: 350;
+    color: rgb(36, 36, 36);
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle
+}
+
+img {
+    width: 90px;
+    height: auto;
+    padding-top: 30px;
+}
+
+#containerLogin {
+    text-align: left;
+    border: 1px solid;
+    border-style: groove;
+    width: 340px;
+    margin: 0 auto;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 20px;
+}
+
+#containerCadastro {
+    text-align: left;
+    border: 1px solid;
+    border-style: groove;
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 20px;
+}
+
+body h1 {
+    margin: 20px 0px;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    font-weight: 350;
+    color: rgb(36, 36, 36);
+}
+
+#formLogin ul li input {
+    margin-top: 8px;
+    width: calc(100% - 14px);
+    padding: 4px 6px;
+    border: 1px solid;
+    border-style: groove;
+}
+
+#formCadastro ul li input {
+    margin-top: 8px;
+    width: calc(100% - 14px);
+    padding: 4px 6px;
+    border: 1px solid;
+    border-style: groove;
+}
+
+#formLogin ul li {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#formCadastro ul li {
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+#formLogin {
+    margin: 20px 30px;
+}
+
+#formCadastro {
+    margin: 20px 30px;
+}
+
+#containerLogin #checkbox {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#containerCadastro #checkbox {
+    margin-left: 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#containerLogin #button-entrar {
+    background-color: rgb(85, 121, 145);
+    border: none;
+    margin: 25px 0 10px 0;
+    width: calc(100% - 150px);
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+#containerLogin #forgot-password {
+    margin: 5px 0px;
+    padding: 10px 0 20px 0;
+}
+
+#button-cadastro {
+    background-color: rgb(85, 121, 145);
+    border: none;
+    margin: 25px 0 10px 0;
+    width: 190px;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+#button-cadastrar {
+    background-color: rgb(85, 121, 145);
+    border: none;
+    margin: 10px 0px 10px 8px;
+    width: 190px;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+#button-limpar {
+    background-color: rgb(138, 172, 194);
+    border: none;
+    margin: 10px 8px 10px 0px;
+    width: 190px;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+.g-recaptcha {
+    margin: 30px 0;
+}
+
+#termos {
+    color: rgb(85, 121, 145);
+}
+
+#conta {
+    margin: 10px 0 30px 0;
+}
+
+#conta a {
+    color: rgb(85, 121, 145);
+}
+
+/* Hover */
+#containerLogin #button-entrar:hover {
+    background-color: rgb(71, 101, 119);
+}
+
+#button-limpar:hover {
+    background-color: rgb(117, 146, 165);
+}
+
+#button-cadastrar:hover {
+    background-color: rgb(71, 101, 119);
+}
+
+#containerLogin #forgot-password a:hover {
+    color: rgb(95, 95, 95);
+}
+
+#button-cadastro:hover {
+    background-color: rgb(71, 101, 119);
+}
+
+#termos:hover {
+    color: rgb(71, 101, 119);
+}
+
+#conta a:hover {
+    color: rgb(71, 101, 119);
+}
+
+.semErro {
+	display: none;
+}		
+
+.erro {
+	color: red;
+}

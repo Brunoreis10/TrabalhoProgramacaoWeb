@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styleInicio.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <title>Início - P.O.G</title>
+</head>
+
+<body onload="generateTable()">
+    <header id="container">
+        <section>
+            <a href="#"><img id="logo" src="./images/logo.png"></a>
+            <h1>POG</h1>
+        </section>
+
+        <section>
+            <label for="busca"></label>
+            <input type="text" id="busca">
+
+            <img id=search src="./images/search.svg">
+        </section>
+    </header>
+
+    <nav class="menuLateral">
+        <ul>
+            <li class="menu" id="inicio">Início</li>
+            <li class="menu" id="lancamento">Lançamentos</li>
+            <li class="menu" id="destaques">Destaques
+                <img src="./images/expand.svg">
+                <ul class="item-destaques">
+                    <li>Mais vendidos</li>
+                    <li>Populares</li>
+                    <li>Ofertas</li>
+                    <li>Mais aguardados</li>
+                </ul>
+            </li>
+            <li class="sub-menu" id="jogos">Jogos
+                <img src="./images/expand.svg">
+                <ul class="item-jogos">
+                    <li class="categoria">Categoria
+                        <img src="./images/expand.svg">
+                        <ul class="item-categoria">
+                            <li>Gêneros</li>
+                            <li>Temas</li>
+                            <li>Seções</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu" id="loja">Loja
+                <img src="./images/expand.svg">
+                <ul class="item-loja">
+                    <li>Catálogo</li>
+                    <li>Lista de desejos</li>
+                    <li>Recomendações</li>
+                </ul>
+            </li>
+            <li class="menu" id="comunidade">Comunidade
+                <img src="./images/expand.svg">
+                <ul class="item-comunidade">
+                    <li>Discussões</li>
+                </ul>
+            </li>
+            <li class="menu" id="noticias">Notícias</li>
+        </ul>
+    </nav>
+
+    <section id="card">
+        <img src="./images/logo.png">
+        <section id="card-text">
+            <h2>Card de texto</h2>
+            <p id="cardText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </section>
+    </section>
+
+    <section class="content">
+        <section id="form">
+            <ul>
+                <li class="form-create">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" id="titulo" required="required">
+
+                    <label for="img">Imagem</label>
+                    <input type="file" id="img" onchange="getImage()" required="required">
+
+                    <label for="categoria">Gêneros</label>
+                    <select id="select-options">
+                        <option selected disabled>Selecione um Gênero</opttion>
+                        <option value="Ação">Ação</option>
+                        <option value="Aventura">Aventura</option>
+                        <option value="Casual">Casual</option>
+                        <option value="Corrida">Corrida</option>
+                        <option value="Esportes">Esportes</option>
+                        <option value="Estratégia">Estratégia</option>
+                        <option value="RPG">RPG</option>
+                        <option value="Simulação">Simulação</option>
+                    </select>
+
+                    <label for="dataLancamento">Data de lançamento</label>
+                    <input type="date" id="dataLancamento" required="required">
+
+                    <label for="desenvolvedora">Desenvolvedora</label>
+                    <input type="text" id="desenvolvedora" required="required">
+
+                    <label for="valor">Valor</label>
+                    <input type="number" id="valor" required="required">
+                </li>
+
+                <li id="buttons">
+                    <button id="button-limpar" onclick="limparValoresTable()">Limpar Tabela</button>
+                    <button id="button-salvar" onclick="setValoresTable(false)">Salvar</button>
+                </li>
+            </ul>
+        </section>
+
+        <section class="table">
+            <table id="table" class="display"></table>
+        </section>    
+    </section>
+
+    <footer>
+        <p>
+            © 2021 P.O.G Corporation. Todos os direitos reservados.
+            Todas as marcas são propriedade dos seus respectivos donos.
+            <br>
+            <a href="#">Política de Privacidade</a> |
+            <a href="#">Termos Legais</a> |
+            <a href="#">Acordo de Assinatura</a> |
+            <a href="#">Reembolsos</a> |
+            <a href="#">Cookies</a>
+        </p>
+        <br>
+        <p>Amanda Miranda Zanella, Bárbara Alessandra Maas, Bruno Henrique Wiedemann Reis e Lucas Miguel Vieira</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="./js/inicio.js"></script>
+</body>
+
+</html>

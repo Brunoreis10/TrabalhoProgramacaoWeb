@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon"/>
+    <title>Login - P.O.G</title>
+</head>
+
+<body>
+    <img src="./images/logo.png">
+
+    <h1>Efetuar login</h1>
+
+    <section id="containerLogin">
+        <form id="formLogin">
+            <ul>
+                <li>
+                    <label for="email">Endereço de e-mail ou nome de usuário </label><br>
+                    <input type="email" id="email" name="email" placeholder="Endereço de e-mail">
+                    <p class="semErro">O campo é obrigatório</p>
+                </li>
+                <li>
+                    <label for="senha">Senha</label><br>
+                    <input type="password" id="senha" name="senha" placeholder="Senha">
+                    <p class="semErro">O campo é obrigatório</p>
+                </li>
+            </ul>
+        </form>
+
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Lembrar de mim</label><br>
+
+        <center>
+            <button id="button-entrar">Entrar</button>
+
+            <p id="forgot-password"><a href="#">Esqueçeu sua senha?</a></p>
+        </center>
+    </section>
+
+    <p>
+        Crie uma conta no POG, descubra milhares de jogos <br>
+        e faça parte da maior comunidade online.
+    </p>
+
+    <button id="button-cadastro">Cadastre-se</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./js/login.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Cadastro - P.O.G</title>
+</head>
+
+<body>
+    <img src="./images/logo.png">
+
+    <h1>Cadastre-se grátis!</h1>
+
+    <section id="containerCadastro">
+        <form id="formCadastro">
+            <ul>
+                <li>
+                    <label for="name">Nome de usuário:</label>
+                    <input type="text" id="name" name="name" placeholder="Nome de usuário">
+                    <p class="semErro">O campo é obrigatório</p>
+                </li>
+                <li>
+                    <label for="email">Endereço de Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Endereço de email">
+                    <p class="semErro">O campo é obrigatório</p>
+                </li>
+                <li>
+                    <label for="senha">Crie uma senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha">
+                    <p class="semErro">O campo é obrigatório</p>
+                </li>
+                <li>
+                    <label for="senha-in">Confirme sua senha:</label>
+                    <input type="password" id="senha-in" name="senha-in" placeholder="Confirmação de senha">
+                    <p class="semErro">O campo é obrigatório</p>
+                </li>
+                <li>
+                    <label for="date">Data de nascimento:</label>
+                    <input type="date" id="date" name="date">
+                    <p class="semErro">O campo é obrigatório</p>
+                </li>
+            </ul>
+        </form>
+        <center>
+            <div class="g-recaptcha" data-sitekey="6LfSNcAcAAAAABuylAAdq3zUzq9OksSHoJ8ZjLoj"></div>
+        </center>
+
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Eu concordo com os <a id="termos" href="#">Termos e Condições de Uso</a></label>
+        <p class="semErro" id="semErroSpan">O campo é obrigatório</p>
+    </section>
+
+    <button id="button-limpar" onclick="limparFormulario()">Limpar Formulário</button>
+    <button id="button-cadastrar">Cadastre-se</button>
+
+
+    <p id="conta">Já possui uma conta? <a href="./formLogin.html">Faça login</a></p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./js/cadastro.js"></script>
+
+</body>
+
+</html>

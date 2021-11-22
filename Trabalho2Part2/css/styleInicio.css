@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p, a, li, label, option {
+    font-size: 14px;
+    font-weight: 350;
+    color: rgb(36, 36, 36);
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 500;
+    color: rgb(17, 17, 17);
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(17, 17, 17);
+}
+
+li {
+    list-style: none;
+}
+
+#container {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(85, 121, 145);
+    align-items: center;
+    justify-content: space-between;
+}
+
+#container #logo {
+    margin: 15px 25px 15px 50px;
+    width: 75px;
+    height: auto;
+}
+
+#container section {
+    display: flex;
+    align-items: center;
+}
+
+#container #search {
+    height: 25px;
+    margin: 0 50px 0 10px;
+}
+
+#container input {
+    width: 300px;
+    height: 20px;
+    border: none;
+}
+
+.menuLateral {
+    flex: 1;
+    background-color: rgb(138, 172, 194);
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    padding-top: 50px;
+}
+
+.menuLateral ul {
+    padding: 0;
+}
+
+.menu {
+    padding: 7px 0;
+    cursor: pointer;
+    padding-left: 30px;
+    transition: 0.5s;
+    line-height: 25px;
+}
+
+.sub-menu {
+    padding: 7px 0;
+    cursor: pointer;
+    padding-left: 30px;
+    transition: 0.5s;
+    line-height: 25px;
+}
+
+.menuLateral ul li ul {
+    display: none;
+    padding-left: 20px;
+}
+
+.menuLateral img {
+    width: auto;
+    height: 15px;
+}
+
+#card {
+    display: flex;
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+#card img {
+    max-width: 120px;
+    max-height: auto;
+    border: 1px solid;
+    border-style: groove;
+    padding: 10px 30px;
+}
+
+#card-text {
+    display: flex;
+    background-color: rgb(245, 245, 245);
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#card-text h2 {
+    margin: 15px 30px;
+}
+
+#card-text p {
+    text-align: justify;
+    margin: 5px 30px 10px;
+}
+
+.content {
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-right: 50px;
+    right: 50px;
+}
+
+#form {
+    margin-right: 30px;
+    position: absolute;
+}
+
+#buttons {
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#button-salvar {
+    background-color: rgb(85, 121, 145);
+    border: none;
+    margin: 10px 0px 10px 8px;
+    width: 135px;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+#button-limpar {
+    background-color: rgb(138, 172, 194);
+    border: none;
+    margin: 10px 8px 10px 0px;
+    width: 135px;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+#form ul {
+    padding: 0;
+}
+
+#form label {
+    padding-top: 5px;
+}
+
+#select-options {
+    margin-top: 8px;
+    padding: 4px 6px;
+    border: 1px solid;
+    border-style: groove;
+}
+
+.form-create {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.form-create input {
+    margin-top: 8px;
+    padding: 4px 6px;
+    border: 1px solid;
+    border-style: groove;
+}
+
+.table {
+    margin-left: 400px;
+    height: 476px;
+}
+
+#table {
+    background-color: rgb(85, 121, 145);
+    font-size: 14px;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: calc(100% - 200px);
+    right: 0;
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: rgb(85, 121, 145);
+    margin-bottom: 0;
+}
+
+footer p, a {
+    color: white;
+}
+
+/* Hover */
+.menu:hover {
+    background-color: rgb(117, 146, 165);
+    transition: 0.5s;
+}
+
+.menu ul li:hover {
+    padding-left: 25px;
+    transition: 0.5s;
+    color: rgb(95, 95, 95);
+}
+
+.sub-menu:hover {
+    background-color: rgb(117, 146, 165);
+    transition: 0.5s;
+}
+
+.sub-menu ul li ul li:hover {
+    padding-left: 25px;
+    transition: 0.5s;
+    color: rgb(95, 95, 95);
+}
+
+#button-limpar:hover {
+    background-color: rgb(117, 146, 165);
+}
+
+#button-salvar:hover {
+    background-color: rgb(71, 101, 119);
+}
+
+footer a:hover {
+    color: rgb(166, 202, 226);
+}
+
+/* Funções para mostrar o menu lateral */
+.menuLateral ul .item-destaques.mostra {
+    display: block;
+}
+
+.menuLateral ul .item-jogos.mostra {
+    display: block;
+}
+
+.menuLateral ul .item-categoria.mostra {
+    display: block;
+}
+
+.menuLateral ul .item-loja.mostra {
+    display: block;
+}
+
+.menuLateral ul .item-comunidade.mostra {
+    display: block;
+}
